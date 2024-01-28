@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "E.I.A.T",
+    "version": "1.0",
+    "description": "modularity is the  key",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "24": "images/icon24.png",
+        "480": "images/icon480.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.atlassian.com/*"],
+          "js": ["content.js"]
+         
+        },
+        {
+            "matches": ["<all_urls>"],
+          "js": ["annojs.js"]
+        }
+      ],
+    "web_accessible_resources": [
+      {
+        "resources": ["images/*"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "icons": {
+        "24": "images/icon24.png",
+        "480": "images/icon480.png"
+    }
+  }
+  
