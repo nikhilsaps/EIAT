@@ -16,7 +16,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://www.atlassian.com/*"],
+            "matches": ["https://paragon-eu.amazon.com/*","https://paragon-na.amazon.com/*"],
           "js": ["content.js"]
          
         },

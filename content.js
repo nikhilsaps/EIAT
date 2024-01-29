@@ -570,6 +570,9 @@ customBox.innerHTML = `
 document.body.appendChild(customBox);
 
 
+
+
+
 function taskdataview() {
 
   const a = document.getElementsByClassName("pi-widgets nautilus-widgets")[0];
@@ -580,6 +583,8 @@ function taskdataview() {
     let que = jsonObject.queueName;
     document.getElementById("qname").innerText= `Queue : ${jsonObject.queueName}`;
     document.getElementById("qiph").innerText=`QIPH : ${IPHdata[que]}`
+
+    
     
   } catch (error) {
     console.error("Error parsing JSON:", error);
@@ -587,6 +592,7 @@ function taskdataview() {
  
 
 }
+
 
 
 

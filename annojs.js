@@ -428,7 +428,7 @@ const jsonstring = a.dataset.pageContext;
 
 try {
     const jsonObject = JSON.parse(jsonstring);
-    let que = jsonObject.queueName;
+    let que = jsonObject.queueName.toLowerCase();
 
     if (que.includes("email")) {
         createEQAnnoSidenav();
