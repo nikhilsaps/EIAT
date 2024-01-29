@@ -544,18 +544,17 @@ const customBox = document.createElement('div');
 
 // Set the styles for the box
 customBox.style.width = '300px';
-customBox.style.height = '80px';
+customBox.style.height = '70px';
 customBox.style.backgroundColor = '#ffffff';
 customBox.style.borderRadius = '10px';
 customBox.style.position = 'fixed';
 
 // Set the position using x and y coordinates
-const xCoordinate = 4; // replace with your desired x-coordinate
-const yCoordinate = 840; // replace with your desired y-coordinate
+const xCoordinate = 300; // replace with your desired x-coordinate
+const yCoordinate = 0; // replace with your desired y-coordinate
 customBox.style.left = `${xCoordinate}px`;
 customBox.style.top = `${yCoordinate}px`;
 
-customBox.style.padding = '10px';
 customBox.style.zIndex = '9999';
 
 // Add some data to the box
