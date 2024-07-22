@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "E.I.A.T",
     "version": "1.0",
-    "description": "modularity is the  key",
+    "description": "modularity is the key",
     "permissions": ["activeTab"],
     "action": {
       "default_popup": "popup/popup.html",
@@ -15,11 +15,6 @@
       "service_worker": "background.js"
     },
     "content_scripts": [
-        {
-            "matches": ["https://paragon-eu.amazon.com/*","https://paragon-na.amazon.com/*"],
-          "js": ["content.js"]
-         
-        },
         {
             "matches": ["<all_urls>"],
           "js": ["annojs.js"]
